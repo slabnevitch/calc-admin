@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin-services</title>
+    <meta name="description" content="">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="section-calc__header section-calc__header--admin">
+      <div class="wrapper">
+        <div class="section-calc__header-nav">
+          <div class="section-calc__header-logo"><img src="img/logo.png" alt=""></div>
+        </div>
+        <div class="section-calc__header-menu">
+          <div class="section-calc__header-menu-item active">
+            <div>Гостиная</div>
+          </div>
+          <div class="section-calc__header-menu-item">
+            <div>Кухня</div>
+          </div>
+          <div class="section-calc__header-menu-item">
+            <div>Санузел</div>
+          </div>
+          <div class="section-calc__header-menu-item">
+            <div>Прихожая</div>
+          </div>
+          <div class="section-calc__header-menu-item">
+            <div>Спальня</div>
+          </div>
+          <div class="section-calc__header-menu-item">
+            <div>Детская</div>
+          </div>
+          <div class="section-calc__header-menu-item">
+            <div>Кабинет</div>
+          </div>
+          <div class="section-calc__header-menu-item">
+            <div>Услуги</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="admin-services">
+      <div class="wrapper">
+        <div class="wrapper-flex">
+          <div class="admin-services__list">
+            <div class="admin-service">
+              <div class="admin-service__text"> 
+                <div class="admin-service__title">Демонтаж старого ремонта </div>
+                <div class="admin-service__price">+54 000₴ </div>
+              </div>
+              <div class="admin__actions">
+                <div class="admin__actions-button"><img src="img/icons-svg/edit.svg"></div>
+                <div class="admin__actions-button"><img src="img/icons-svg/bin.svg"></div>
+              </div>
+            </div>
+            <div class="admin-service">
+              <div class="admin-service__text"> 
+                <div class="admin-service__title">Стяжка по маякам</div>
+                <div class="admin-service__price">+54 000₴ </div>
+              </div>
+              <div class="admin__actions">
+                <div class="admin__actions-button"><img src="img/icons-svg/edit.svg"></div>
+                <div class="admin__actions-button"><img src="img/icons-svg/bin.svg"></div>
+              </div>
+            </div>
+            <div class="admin-service">
+              <div class="admin-service__text"> 
+                <div class="admin-service__title">Возведение перегородок</div>
+                <div class="admin-service__price">+54 000₴ </div>
+              </div>
+              <div class="admin__actions">
+                <div class="admin__actions-button"><img src="img/icons-svg/edit.svg"></div>
+                <div class="admin__actions-button"><img src="img/icons-svg/bin.svg"></div>
+              </div>
+            </div>
+            <div class="admin-service">
+              <div class="admin-service__text"> 
+                <div class="admin-service__title">Я категорически против проживания строителей в квартире</div>
+                <div class="admin-service__price">+54 000₴ </div>
+              </div>
+              <div class="admin__actions">
+                <div class="admin__actions-button"><img src="img/icons-svg/edit.svg"></div>
+                <div class="admin__actions-button"><img src="img/icons-svg/bin.svg"></div>
+              </div>
+            </div>
+            <button data-custom-open="modal-add-service" class="btn btn-empty btn-dash">Добавить новую услугу</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-add-service" aria-hidden="true" class="modal micromodal-slide">
+      <div tabindex="-1" data-micromodal-close="" data-custom-close class="modal__overlay">
+        <div class="modal__wrapper">
+          <button aria-label="Close modal" data-custom-close class="modal__close"></button>
+          <div role="dialog" aria-modal="true" aria-labelledby="modal-add-category" class="modal__container">
+            <header class="modal__header">
+              <h2 class="admin__title">Добавить новую услугу</h2>
+            </header>
+            <main class="modal__content">
+              <form class="admin-form">
+                <label class="admin-form__label">Название услуги</label>
+                <input type="text" class="admin-form__input">
+                <label class="admin-form__label">Стоимость</label>
+                <input type="text" class="admin-form__input">
+                <button class="btn btn-h40">Добавить</button>
+              </form>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/micromodal/micromodal.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
